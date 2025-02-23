@@ -1,0 +1,593 @@
+@import url(reset.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans';
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(239,241,254,1) 52%);
+}
+
+/* Mobile design */
+@media (max-width: 767px){
+      
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        max-width: 100%;
+        height: 50px;
+    }
+    
+    .website_header_logo{
+        width: 85px;
+        object-fit: contain;
+    }
+    
+    .getstarted_header_link{
+        padding: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        background-color: #13183f;
+        color: #fff;
+    }
+    
+    .main_content_intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 790px;
+        max-width: 100%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    
+    .main_page_title{
+        font-size: 2.6rem;
+        font-weight: 800;
+        line-height: 48px;
+        color: #13183f;
+        margin-bottom: 35px;
+    }
+    
+    .course_description{
+        line-height: 30px;
+        font-size: 1.2rem;
+        color: #83869a;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .getstarted_main_link{
+        flex-grow: 0;
+        flex-shrink: 1;
+        width: auto;
+        max-width: fit-content;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 40px;
+        background: rgb(255,111,72);
+        background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    }
+    
+    .main_img{
+        height: 100%;
+        margin-top: 80px;
+        max-width: 100%;
+        background-size: 470px;
+        background-position: center center;
+        background-image: url('./assets/image-hero-mobile@2x.png');
+    }
+    
+    .courses_content{
+        display: grid;
+        position: relative;
+        grid-template-rows: 1fr, repeat(5, 2fr);
+        gap: 65px;
+    }
+    
+    .main_page_title2{
+        justify-self: center;
+        box-sizing: border-box;
+        width: auto;
+        max-width: 80%;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 50px;
+        padding: 35px;
+        border-radius: 12px;
+        color: #fff;
+        background: rgb(255,111,72);
+        background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    }
+    
+    .course_content{
+        justify-self: center;
+        width: 290px;
+        max-width: 100%;
+        height: 275px;
+        border-radius: 10px;
+        box-shadow: 5px 15px 15px rgba(131, 134, 154, 0.1);
+        padding: 30px;
+        background-color: #fefeff;
+    }
+    
+    .course_icon1, 
+    .course_icon2,
+    .course_icon3,
+    .course_icon4,
+    .course_icon5{
+        width: 65px;
+        position: absolute;
+        transform: translateY(-63px);
+    }
+    
+    .course_title{
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: #13183f;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+    
+    .course_info{
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #83869a;
+        line-height: 25px;
+        margin-bottom: 35px;
+    }
+    
+    .getstarted_course_link{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #f74780;
+    }
+    
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        height: 70px;
+        max-width: 100%;
+        background-color: #13183f;
+        margin-top: 100px;
+    }
+    
+    .website_footer_logo{
+        width: 90px;
+        object-fit: contain;
+    }
+    
+    .getstarted_footer_link{
+        padding: 15px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        background: rgb(72,81,255);
+        background: linear-gradient(180deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%);
+        color: #fff;
+    }
+}
+
+/* tablet design */
+@media (min-width: 768px) and (max-width: 1199px){
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 100%;
+        margin-bottom: 80px;
+        height: 50px;
+        background: transparent;
+        position: relative;
+    }
+    
+    .website_header_logo{
+        width: 100px;
+        object-fit: contain;
+    }
+    
+    .getstarted_header_link{
+        padding: 18px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        background-color: #13183f;
+        color: #fff;
+    }
+    
+    .main_content_intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 55px repeat(3, auto);
+        height: 300px;
+        max-width: 100%;
+        padding-left: 50px;
+        position: relative;
+    }
+    
+    .main_page_title{
+        height: 100px;
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-height: 48px;
+        color: #13183f;
+        margin-bottom: 20px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .course_description{
+        line-height: 30px;
+        font-size: 1.2rem;
+        color: #83869a;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .getstarted_main_link{
+        grid-column: 1;
+        grid-row: span 2;
+        flex-grow: 0;
+        flex-shrink: 1;
+        width: auto;
+        max-width: fit-content;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: #fff;
+        margin-top: 80px;
+        padding: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 40px;
+        background: rgb(255,111,72);
+        background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    }
+    
+    .main_img{
+        width: 400px;
+        max-width: 100%;
+        height: 375px;
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 40px center;
+        background-image: url('./assets/image-hero-mobile.png');
+        overflow: hidden;
+    }
+    
+    .courses_content{
+        display: grid;
+        position: relative;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 300px;
+        gap: 40px;
+    }
+    
+    .main_page_title2{
+        justify-self: center;
+        box-sizing: border-box;
+        max-width: 80%;
+        margin-left: 10px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 35px;
+        border-radius: 12px;
+        color: #fff;
+        background: rgb(255,111,72);
+        background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    }
+    
+    .course_content{
+        justify-self: center;
+        width: 290px;
+        max-width: 100%;
+        height: 275px;
+        border-radius: 10px;
+        box-shadow: 5px 15px 15px rgba(131, 134, 154, 0.1);
+        padding: 30px;
+        background-color: #fefeff;
+    }
+    
+    .course_icon1, 
+    .course_icon2,
+    .course_icon3,
+    .course_icon4,
+    .course_icon5{
+        width: 65px;
+        position: absolute;
+        transform: translateY(-63px);
+    }
+    
+    .course_title{
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: #13183f;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+    
+    .course_info{
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #83869a;
+        line-height: 25px;
+        margin-bottom: 35px;
+    }
+    
+    .getstarted_course_link{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #f74780;
+    }
+    
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        height: 70px;
+        max-width: 100%;
+        background-color: #13183f;
+        margin-top: 100px;
+    }
+    
+    .website_footer_logo{
+        width: 90px;
+        object-fit: contain;
+    }
+    
+    .getstarted_footer_link{
+        padding: 15px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        background: rgb(72,81,255);
+        background: linear-gradient(180deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%);
+        color: #fff;
+    }
+}
+
+/* desktop design */
+@media (min-width: 1200px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px;
+        padding-left: 150px;
+        padding-right: 150px;
+        max-width: 100%;
+        margin-bottom: 180px;
+        height: 50px;
+        background: transparent;
+        position: relative;
+    }
+    
+    .website_header_logo{
+        width: 120px;
+        object-fit: contain;
+    }
+    
+    .getstarted_header_link{
+        padding: 18px;
+        padding-left: 45px;
+        padding-right: 45px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+        background-color: #13183f;
+        color: #fff;
+    }
+    
+    .main_content_intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 55px repeat(3, auto);
+        height: 300px;
+        max-width: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
+        position: relative;
+        column-gap: 50px;
+        margin-bottom: 400px;
+    }
+    
+    .main_page_title{
+        height: 100px;
+        width: 80%;
+        font-size: 4.3rem;
+        font-weight: 800;
+        line-height: 68px;
+        color: #13183f;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .course_description{
+        width: 60%;
+        line-height: 35px;
+        font-size: 1.4rem;
+        color: #83869a;
+        margin-top: 70px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .getstarted_main_link{
+        grid-column: 1;
+        grid-row: span 2;
+        flex-grow: 0;
+        flex-shrink: 1;
+        width: auto;
+        max-width: fit-content;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: #fff;
+        margin-top: 140px;
+        padding: 22px;
+        padding-left: 45px;
+        padding-right: 45px;
+        border-radius: 40px;
+        background: rgb(255,111,72);
+        background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+        transition: 0.2s;
+    }
+
+    .getstarted_main_link:active{
+        opacity: 0.7;
+    }
+    
+    .main_img{
+        width: 800px;
+        height: 975px;
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: -20px -80px;
+        background-image: url('./assets/image-hero-mobile.png');
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .courses_content{
+        display: grid;
+        position: relative;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 500px);
+        margin-top: 300px;
+        row-gap: 100px;
+        column-gap: 40px;
+        padding-left: 150px;
+        padding-right: 150px;
+
+    }
+    
+    .main_page_title2{
+        justify-self: center;
+        box-sizing: border-box;
+        max-width: 100%;
+        line-height: 55px;
+        font-size: 2.8rem;
+        font-weight: 600;
+        padding: 65px;
+        padding-top: 80px;
+        padding-right: 120px;
+        border-radius: 12px;
+        color: #fff;
+        background: rgb(255,111,72);
+        background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    }
+    
+    .course_content{
+        justify-self: center;
+        max-width: 100%;
+        height: 425px;
+        border-radius: 10px;
+        box-shadow: 5px 15px 15px rgba(131, 134, 154, 0.1);
+        padding: 40px;
+        background-color: #fefeff;
+    }
+    
+    .course_icon1, 
+    .course_icon2,
+    .course_icon3,
+    .course_icon4,
+    .course_icon5{
+        width: 85px;
+        position: absolute;
+        transform: translateY(-85px);
+    }
+    
+    .course_title{
+        font-size: 2rem;
+        font-weight: 800;
+        color: #13183f;
+        margin-top: 65px;
+        margin-bottom: 45px;
+    }
+    
+    .course_info{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #83869a;
+        line-height: 40px;
+        margin-bottom: 75px;
+    }
+    
+    .getstarted_course_link{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #f74780;
+    }
+    
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        height: 70px;
+        max-width: 100%;
+        background-color: #13183f;
+        margin-top: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    
+    .website_footer_logo{
+        width: 110px;
+        object-fit: contain;
+    }
+    
+    .getstarted_footer_link{
+        padding: 20px;
+        padding-left: 45px;
+        padding-right: 45px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        background: rgb(72,81,255);
+        background: linear-gradient(180deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%);
+        color: #fff;
+    }
+}
